@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    background-color: wheat;
+}
+
+#slides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+}
+
+.svg-loader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}

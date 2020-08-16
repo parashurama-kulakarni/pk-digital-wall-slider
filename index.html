@@ -1,28 +1,18 @@
-<html>
-<style>
-  body {
-    margin: 0px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<body id="body" style='background:white;'>
-  <img style="width: 100%;height: 100%;object-fit: cover;" id='myimage1' />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>PK - Digital Wall Slider</title>
+</head>
+
+<body id="body">
+  <img id='slides' />
+  <img class="svg-loader" src="Spin-1s-200px.svg" style="width: 100%;height: 100%;">
 </body>
-<script>
-  var img = document.getElementById("myimage1");
-  var body = document.getElementById("body");
-  document.addEventListener('dblclick', () => {
-    document.body.requestFullscreen();
-  });
-  var x = window.screen.width;
-  var y = window.screen.height;
-  img.setAttribute('width', x);
-  img.setAttribute('height', y);
-  alert(x + ' ' + y);
-  setInterval(function () {
-    img.setAttribute("src",
-      `https://source.unsplash.com/collection/190727/${x}x${y}?${parseInt(Math.random()*1000)}`);
-  }, 5000);
-</script>
+<script src="index.js"></script>
 
 </html>
